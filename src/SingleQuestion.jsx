@@ -8,7 +8,7 @@ export default function SingleQuestion({ title, info }) {
       <header>
         <h5>{title}</h5>
         <button className="question-btn" onClick={() => setShowInfo(!showInfo)}>
-          click
+          {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </header>
       {showInfo && <p>{info}</p>}
